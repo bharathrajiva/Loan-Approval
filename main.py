@@ -120,7 +120,7 @@ def predict_approval(file_name):
             content_text = docx_to_text(file_name)
         except:
             print("unsupported file")
-    model_file_name = 'loan_model.sav'
+    model_file_name = 'Final_Loan_Model.sav'
     model = pickle.load(open(model_file_name, 'rb'))
 
     loan_amt = extract_loan_amt(content_text)
